@@ -14,6 +14,11 @@ const LoginPage = () => {
 
         navigate('/home');
     };
+
+    const handleSignup = (e) => {
+        e.preventDefault();
+        navigate('/signup');
+    }
     return(
         <div className="login-page">
             <form onSubmit ={handleSubmit}>
@@ -37,6 +42,8 @@ const LoginPage = () => {
                     />
                 </div>
                 <button type="submit">Login</button>
+                <div></div>
+                <button type="button" onClick={handleSignup}>Sign Up</button>
             </form>
         </div>
     ); 
