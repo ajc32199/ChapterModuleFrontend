@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './home_page.css';
 
 const HomePage = () => {
     return(
